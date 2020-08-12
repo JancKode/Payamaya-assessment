@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import {Provider as DataProvider} from './context/dataContext'
 
 ReactDOM.render(
-  <React.StrictMode>
+  
+    <DataProvider>
     <App />
-  </React.StrictMode>,
+    </DataProvider>
+  ,
   document.getElementById('root')
 );
 
